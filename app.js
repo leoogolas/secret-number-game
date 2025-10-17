@@ -3,11 +3,11 @@ let limitNumber = 100;
 let secretNumber = generateRandomNumber();
 let attempt = 1;
 
-function showTextonScreen(tag, text) {
-	let field = document.querySelector(tag);
-	field.innerHTML = text;
-	responsiveVoice.speak(text, "US English Female", { rate: 1.2 });
-}
+// function showTextonScreen(tag, text) {
+//	let field = document.querySelector(tag);
+//	field.innerHTML = text;
+//	responsiveVoice.speak(text, "US English Female", { rate: 1.2 });
+//} 
 
 function displayWelcomeMessage() {
 	showTextonScreen("h1", "Secret Number");
@@ -61,4 +61,5 @@ function restartGame() {
 	displayWelcomeMessage();
 	document.getElementById("restart").setAttribute("disabled", true);
 }
+
 
